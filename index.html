@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Enviar y Mostrar Datos</title>
+<script>
+    function mostrarUltimoValor() {
+        var valor = document.getElementById("dato").value;
+        document.getElementById("ultimo-valor").innerText = "Último valor recibido: " + valor;
+    }
+</script>
+</head>
+<body>
+    <h2>Enviar y Mostrar Datos</h2>
+    <form onsubmit="mostrarUltimoValor(); return false;">
+        <label for="dato">Introduce un valor:</label><br>
+        <input type="text" id="dato" name="dato"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <p id="ultimo-valor"></p>
+</body>
+</html>
